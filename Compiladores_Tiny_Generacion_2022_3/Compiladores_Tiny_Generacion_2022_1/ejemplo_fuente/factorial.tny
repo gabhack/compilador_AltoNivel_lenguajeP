@@ -1,0 +1,41 @@
+{ Sample program
+  in TINY language -
+  computes factorial
+}
+read x; { input an integer }
+if 0 < x then { don't compute if x <= 0 }
+  fact := 1;
+  repeat
+    fact := fact * x;
+    x := x - 1
+  until x = 0;
+  write fact  { output factorial of x }
+end
+--------------------------
+
+
+-- Sample program
+-- in P language -
+-- computes factorial
+
+-- Leer entrada del usuario
+INPUT x
+
+-- Comprobar si x es mayor que 0
+IF x > 0 THEN
+  -- Inicializar la variable fact con 1
+  fact := 1;
+
+  -- Bucle repeat para calcular el factorial
+  REPEAT
+    -- Multiplicar fact por x y almacenar el resultado en fact
+    fact := fact * x;
+
+    -- Decrementar x en 1
+    x := x - 1;
+  -- Salir del bucle cuando x sea igual a 0
+  UNTIL x = 0;
+
+  -- Escribir el factorial de x
+  OUTPUT fact;
+END
